@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'spacex';
-  src: url('@moonchain/metadata/font/spacex.ttf');
+  src: url('./font/spacex.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
