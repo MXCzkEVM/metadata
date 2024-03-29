@@ -1,6 +1,6 @@
 {
   "name": "@moonchain/metadata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "devDependencies": {
     "bumpp": "^9.4.0"
   }
