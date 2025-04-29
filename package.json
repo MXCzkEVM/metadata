@@ -8,9 +8,6 @@
     "release": "bumpp && pnpm publish --access public",
     "prepublishOnly": "npm run build"
   },
-  "files": [
-    "dist"
-  ],
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
   "require": "dist/index.cjs",
