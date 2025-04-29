@@ -1,7 +1,28 @@
 {
   "name": "@moonchain/metadata",
+  "type": "module",
   "version": "0.0.5",
+  "packageManager": "pnpm@10.8.0",
+  "scripts": {
+    "build": "tsdown index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "require": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
   "devDependencies": {
-    "bumpp": "^9.4.0"
+    "bumpp": "^9.4.0",
+    "tsdown": "^0.10.0",
+    "typescript": "^5.8.3"
   }
 }
