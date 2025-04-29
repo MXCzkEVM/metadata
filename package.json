@@ -5,6 +5,7 @@
   "packageManager": "pnpm@10.8.0",
   "scripts": {
     "build": "tsdown index.ts",
+    "release": "bumpp && pnpm publish --access public",
     "prepublishOnly": "npm run build"
   },
   "files": [
